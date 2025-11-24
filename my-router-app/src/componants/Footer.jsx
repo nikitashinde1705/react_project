@@ -7,6 +7,8 @@ const Footer = () => {
                 &copy; 2025 My react | Designed with Nikita Shinde
             </p>
         </footer>
+
+        
         
         
         </>
