@@ -2,15 +2,19 @@ import './App.css'
 import FunctionExample from './componants/FunctionExample'
 import EventExample from './componants/EventExample'
 import ArrayList from './componants/ArrayList'
+import ObjectExample from './componants/ObjectExample'
+import ConditionalStatements from './componants/ConditionalStatements'
 
 function App() {
 
   return (
     <>
 
-    <FunctionExample/>
+    {/* <FunctionExample/>
     <EventExample/>
-    <ArrayList/>
+    <ArrayList/> */}
+    {/* <ObjectExample/> */}
+    <ConditionalStatements/>
       
     </>
   )
