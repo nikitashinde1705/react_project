@@ -7,8 +7,9 @@ import ConditionalStatements from './componants/ConditionalStatements'
 import Message from './componants/Message'
 import Student from './componants/Student'
 import { PassingNumberProps, PassingBoolean, PassingObject, PassingArray,PassingImage } from './componants/PassingValuesProps'
-//import logo from './assets/react.svg'
+import logo from './assets/react.svg'
 import Accordion from './componants/Accordian'
+import Cards from './componants/Cards'
 
 function App() {
 
@@ -61,11 +62,34 @@ function App() {
          <Accordion id={2} que="What is the purpose of props in React?" ans="Props is a special keyword in React that stands for properties and is used for passing data from one component to another. "/>
          <Accordion id={3} que="What ia your name ?" ans="My name is Ankita"/>
 
+         
+
 
 
       </div>
     </div>
     </div>
+
+    <div className="container">
+          <div className="row">
+                <h3>Cards using props</h3>
+              <div className="col-md-3">
+                <Cards photo={logo} title="React Logo" body="React is an Framework" button="READ MORE"/>
+              </div>
+              <div className="col-md-3">
+                <Cards photo={logo} title="React Logo" body="React is an Framework" button="READ MORE"/>
+              </div>
+              <div className="col-md-3">
+                <Cards photo={logo} title="React Logo" body="React is an Framework" button="READ MORE"/>
+              </div>
+              <div className="col-md-3">
+                <Cards photo={logo} title="React Logo" body="React is an Framework" button="READ MORE"/>
+              </div>
+              
+          
+           
+          </div>
+         </div>
       
     </>
   )
