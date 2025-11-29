@@ -13,7 +13,7 @@ const Accordion = ({id, que, ans}) => {
                           </button>
                         </h2>
                         <div id={`collapse-${id}`} className="accordion-collapse collapse" aria-labelledby={`heading-${id}`}data-bs-parent="#accordionExample">
-                          <div className="accordion-body">
+                          <div className="accordion-body" >
                             <p>{ans}</p> 
                           </div>
                         </div>

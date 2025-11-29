@@ -7,9 +7,16 @@ import ConditionalStatements from './componants/ConditionalStatements'
 import Message from './componants/Message'
 import Student from './componants/Student'
 import { PassingNumberProps, PassingBoolean, PassingObject, PassingArray,PassingImage } from './componants/PassingValuesProps'
-import logo from './assets/react.svg'
+import product1 from './assets/watch.jpg'
+import product2 from './assets/mobile.jpg'
+import product3 from './assets/laptop.jpg'
+import product4 from './assets/headphone.jpg'
 import Accordion from './componants/Accordian'
 import Cards from './componants/Cards'
+import UseStateCounter from './componants/UseStateCounter'
+import UseStateInput from './componants/UseStateInput'
+import UseStateHideShow from './componants/UseStateHideShow'
+import ProductQuantityOrder from './componants/ProductQuantityOrder'
 
 function App() {
 
@@ -57,10 +64,10 @@ function App() {
          <h2>Passing image</h2>
          <PassingImage image={logo}/> */}
 
-         <h4>Accordian using props</h4>
+         {/* <h4>Accordian using props</h4>
          <Accordion id={1} que="What is React props?" ans="In React, props short for properties are a mechanism for passing data from a parent component to a child component. They are a fundamental concept for building reusable and dynamic React applications."/>
          <Accordion id={2} que="What is the purpose of props in React?" ans="Props is a special keyword in React that stands for properties and is used for passing data from one component to another. "/>
-         <Accordion id={3} que="What ia your name ?" ans="My name is Ankita"/>
+         <Accordion id={3} que="What ia your name ?" ans="My name is Ankita"/> */}
 
          
 
@@ -71,7 +78,7 @@ function App() {
     </div>
 
     <div className="container">
-          <div className="row">
+          {/* <div className="row">
                 <h3>Cards using props</h3>
               <div className="col-md-3">
                 <Cards photo={logo} title="React Logo" body="React is an Framework" button="READ MORE"/>
@@ -88,9 +95,28 @@ function App() {
               
           
            
+          </div> */}
+
+        
+          {/* <UseStateCounter/>
+
+          <UseStateInput/>
+
+          <UseStateHideShow/> */}
+
+          <div className="row">
+            <h2>Products</h2>
+            <div className="col-md-3"><ProductQuantityOrder productName="Watch" price={120} photo={product1}/></div>
+          <div className="col-md-3"><ProductQuantityOrder productName="Mobile" price={12000} photo={product2}/></div>
+          <div className="col-md-3"><ProductQuantityOrder productName="Laptop" price={35000} photo={product3}/></div>
+          <div className="col-md-3"><ProductQuantityOrder productName="Laptop" price={35000} photo={product4}/></div>
           </div>
+
+
          </div>
       
+    
+
     </>
   )
 }
