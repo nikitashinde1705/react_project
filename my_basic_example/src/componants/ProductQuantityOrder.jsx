@@ -8,7 +8,7 @@ const ProductQuantityOrder = ({productName, price, photo}) => {
        
         <>
 
-        <div className="container">
+        <div className="container m-5">
             <div className="row justify-content-center align-item-center">
                 
                     <div className="card" >

@@ -17,6 +17,10 @@ import UseStateCounter from './componants/UseStateCounter'
 import UseStateInput from './componants/UseStateInput'
 import UseStateHideShow from './componants/UseStateHideShow'
 import ProductQuantityOrder from './componants/ProductQuantityOrder'
+import LikeSymbol from './componants/LikeSymbol'
+import UseEffectCounter from './componants/UseEffect.Counter'
+import UseEffectLiveTime from './componants/UseEffectLiveTime'
+import UseEffectAPIList from './componants/UseEffectAPIList'
 
 function App() {
 
@@ -112,8 +116,22 @@ function App() {
           <div className="col-md-3"><ProductQuantityOrder productName="Laptop" price={35000} photo={product4}/></div>
           </div>
 
+          <LikeSymbol/>
+
+          {/* <UseEffectCounter/> */}
+          <UseEffectLiveTime/>
+          
+
 
          </div>
+
+    <div className="container">
+        <div className="row ">
+            
+            <UseEffectAPIList/>
+           
+        </div>
+    </div>
       
     
 
