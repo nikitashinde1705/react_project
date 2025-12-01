@@ -7,10 +7,10 @@ import ConditionalStatements from './componants/ConditionalStatements'
 import Message from './componants/Message'
 import Student from './componants/Student'
 import { PassingNumberProps, PassingBoolean, PassingObject, PassingArray,PassingImage } from './componants/PassingValuesProps'
-import product1 from './assets/watch.jpg'
-import product2 from './assets/mobile.jpg'
-import product3 from './assets/laptop.jpg'
-import product4 from './assets/headphone.jpg'
+// import product1 from './assets/watch.jpg'
+// import product2 from './assets/mobile.jpg'
+// import product3 from './assets/laptop.jpg'
+// import product4 from './assets/headphone.jpg'
 import Accordion from './componants/Accordian'
 import Cards from './componants/Cards'
 import UseStateCounter from './componants/UseStateCounter'
@@ -21,6 +21,8 @@ import LikeSymbol from './componants/LikeSymbol'
 import UseEffectCounter from './componants/UseEffect.Counter'
 import UseEffectLiveTime from './componants/UseEffectLiveTime'
 import UseEffectAPIList from './componants/UseEffectAPIList'
+import SimpleForm from './componants/SimpleTextInputFormHandling'
+import ControlledFormeHandling from './componants/MultipleInputFormHandling'
 
 function App() {
 
@@ -40,10 +42,10 @@ function App() {
     {/* <ConditionalStatements/> */}
 
     <div className="container">
-      <div className="row border p-5 m-5">
+      {/* <div className="row  p-5 m-5">
 
-        <div className="col-md-6 m-2 ">
-        {/* <Message text="Hello its Nikita"/>
+         <div className="col-md-6 m-2 ">
+         <Message text="Hello its Nikita"/>
         <Message text="I am from Nashik"/>
         <Student name="Nikita" age="22" city="Nashik"/>
         <hr />
@@ -56,29 +58,29 @@ function App() {
         <hr />
         <PassingBoolean isAdmin={false} />
 
-        <hr /> */}
+        <hr /> 
 
         
-       {/* <h2>Passing Object</h2>
+       <h2>Passing Object</h2>
         <PassingObject info={student} />
 
          <h2>Passing array</h2>
          <PassingArray list={subjects}/>
          <hr />
          <h2>Passing image</h2>
-         <PassingImage image={logo}/> */}
+         <PassingImage image={logo}/> 
 
-         {/* <h4>Accordian using props</h4>
+          <h4>Accordian using props</h4>
          <Accordion id={1} que="What is React props?" ans="In React, props short for properties are a mechanism for passing data from a parent component to a child component. They are a fundamental concept for building reusable and dynamic React applications."/>
          <Accordion id={2} que="What is the purpose of props in React?" ans="Props is a special keyword in React that stands for properties and is used for passing data from one component to another. "/>
-         <Accordion id={3} que="What ia your name ?" ans="My name is Ankita"/> */}
+         <Accordion id={3} que="What ia your name ?" ans="My name is Ankita"/> 
 
          
 
 
 
-      </div>
-    </div>
+      </div> 
+    </div> */}
     </div>
 
     <div className="container">
@@ -108,30 +110,33 @@ function App() {
 
           <UseStateHideShow/> */}
 
-          <div className="row">
+          {/* <div className="row">
             <h2>Products</h2>
             <div className="col-md-3"><ProductQuantityOrder productName="Watch" price={120} photo={product1}/></div>
           <div className="col-md-3"><ProductQuantityOrder productName="Mobile" price={12000} photo={product2}/></div>
           <div className="col-md-3"><ProductQuantityOrder productName="Laptop" price={35000} photo={product3}/></div>
           <div className="col-md-3"><ProductQuantityOrder productName="Laptop" price={35000} photo={product4}/></div>
-          </div>
+          </div> */}
 
-          <LikeSymbol/>
+          {/* <LikeSymbol/> */}
 
           {/* <UseEffectCounter/> */}
-          <UseEffectLiveTime/>
+          {/* <UseEffectLiveTime/> */}
           
 
 
          </div>
 
-    <div className="container">
+    {/* <div className="container">
         <div className="row ">
             
             <UseEffectAPIList/>
            
         </div>
-    </div>
+    </div> */}
+
+    <SimpleForm/>
+    <ControlledFormeHandling/>
       
     
 
