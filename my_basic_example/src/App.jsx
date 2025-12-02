@@ -23,6 +23,7 @@ import UseEffectLiveTime from './componants/UseEffectLiveTime'
 import UseEffectAPIList from './componants/UseEffectAPIList'
 import SimpleForm from './componants/SimpleTextInputFormHandling'
 import ControlledFormeHandling from './componants/MultipleInputFormHandling'
+import MultipleInputFormuseRef from './componants/MultipleInputFormuseRef'
 
 function App() {
 
@@ -135,8 +136,9 @@ function App() {
         </div>
     </div> */}
 
-    <SimpleForm/>
-    <ControlledFormeHandling/>
+    {/* <SimpleForm/> */}
+    {/* <ControlledFormeHandling/> */}
+    <MultipleInputFormuseRef/>
       
     
 

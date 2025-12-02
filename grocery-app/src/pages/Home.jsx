@@ -1,7 +1,7 @@
 
 import home_bg from "../assets/home_bg.png"
 import vegImg from '../assets/home_1.png'
-// import offer1Img from '../assets/off-one.png'
+import offer1Img from '../assets/off-one.png'
 // // import groceryImg from '../assets/home_2.png'
 // // import fruitsImg from '../assets/home_3.png'
 
@@ -69,34 +69,73 @@ const Home = () => {
 
  
       <div class="container my-5">
-  <div class="row g-4">
+        <div class="row g-4">
 
-
-    <div class="col-md-4">
-      <div class="promo-card position-relative">
+            <div class="col-md-4">
+                <div class="promo-card position-relative">
         
-        <div class="p-4 left-area">
-          <p class="tagline">Organically</p>
-          <h2 class="title">ORGANIC VEGETABLES</h2>
-          <p class="subtitle">Best For Health</p>
+                    <div class="p-4 left-area">
+                        <p class="tagline">Organically</p>
+                        <h2 class="title">ORGANIC VEGETABLES</h2>
+                        <p class="subtitle">Best For Health</p>
+                        <img src={vegImg} class="product-img" />
 
-          <button class="btn view-btn">VIEW MORE</button>
-        </div>
+                        <button class="btn view-btn">VIEW MORE</button>
+                    </div>
 
-        <div class="right-area"></div>
+                     <div class="right-area">
+                            <div class="discount-badge">
+                            <span><img src={offer1Img} alt="" /></span>
+                     </div>
+                     
+                     </div> 
+                  </div>
+              </div>
 
-       
-        <div class="discount-badge">
-          <span>30% OFF</span>
-        </div>
-
+              <div class="col-md-4">
+                <div class="promo-card position-relative">
         
-        <img src={vegImg} class="product-img" />
+                    <div class="p-4 left-area">
+                        <p class="tagline">Organically</p>
+                        <h2 class="title">ORGANIC VEGETABLES</h2>
+                        <p class="subtitle">Best For Health</p>
+                        <img src={vegImg} class="product-img" />
+
+                        <button class="btn view-btn">VIEW MORE</button>
+                    </div>
+
+                     <div class="right-area">
+                            <div class="discount-badge">
+                            <span><img src={offer1Img} alt="" /></span>
+                     </div>
+                     
+                     </div> 
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="promo-card position-relative">
+        
+                    <div class="p-4 left-area">
+                        <p class="tagline">Organically</p>
+                        <h2 class="title">ORGANIC VEGETABLES</h2>
+                        <p class="subtitle">Best For Health</p>
+                        <img src={vegImg} class="product-img" />
+
+                        <button class="btn view-btn">VIEW MORE</button>
+                    </div>
+
+                     <div class="right-area">
+                            <div class="discount-badge">
+                            <span><img src={offer1Img} alt="" /></span>
+                     </div>
+                     
+                     </div> 
+                  </div>
+              </div>
+
+        </div>
       </div>
-    </div>
-
-  </div>
-</div>
 
 
         </>

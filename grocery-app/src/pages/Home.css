@@ -65,47 +65,48 @@
 
 .promo-card {
   background: #faf7f4;
-  border-radius: 10px;
   height: 270px;
   overflow: hidden;
 }
 
 .left-area {
-  width: 55%;
+  width: 80%;
   position: absolute;
-  z-index: 3;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .tagline {
-  color: #82a942;
+  color: #9BB935;
   font-size: 20px;
   font-style: italic;
-  margin-bottom: 5px;
 }
 
 .title {
   font-size: 28px;
-  font-weight: 700;
-  color: #333;
+  font-weight: 600;
+  color: #4B2D3E;
   line-height: 1.2;
 }
 
 .subtitle {
-  margin: 10px 0;
-  color: #444;
+  color: #4D4D4D;
 }
 
 .view-btn {
-  background: #8bb541;
+  background: #9BB935;
   color: #fff;
   font-weight: 600;
-  padding: 8px 28px;
-  border-radius: 5px;
+  padding: 8px 1dvh;
+
 }
 
 .right-area {
-  background: #a8c45c;
-  width: 45%;
+  background: #9BB935;
+  width: 20%;
   height: 100%;
   right: 0;
   top: 0;
@@ -113,30 +114,19 @@
 }
 
 .discount-badge {
-  width: 90px;
-  height: 90px;
-  background: #ff2c2c;
-  border-radius: 50%;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 50%;
   z-index: 4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  border: 5px solid #ff7777;
 }
 
 .product-img {
-  position: absolute;
-  width: 250px;
-  bottom: -15px;
-  right: 40px;
-  z-index: 3;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    right: -35%;
+    z-index: 3;
+    bottom: -50px;
 }
 
 
