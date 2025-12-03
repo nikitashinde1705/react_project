@@ -63,71 +63,109 @@
 }
 
 
-.promo-card {
-  background: #faf7f4;
-  height: 270px;
-  overflow: hidden;
+/* Home Discount section start */
+
+#discount{
+  position: relative;
+  margin: 7rem 5rem;
+ 
 }
 
-.left-area {
-  width: 80%;
-  position: absolute;
-  z-index: 5;
+.dis-container{
+  position: relative;
+  margin: 0px 25px;
+  padding: 0px 15px;
+}
+
+.row{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+
 }
 
-.tagline {
+.dis-card-container{
+  margin-top: 3rem;
+  display: flex;
+  height: 234px;
+}
+
+.dis-left-part{
+  flex-basis: 80%;
+  background-color: #f8f5f0;
+  padding: 25px 15px;
+  position: relative;
+}
+
+.small-heading{
   color: #9BB935;
   font-size: 20px;
-  font-style: italic;
+  margin-bottom: 0;
+  font-family:cursive;  /*dancing script */
 }
 
-.title {
-  font-size: 28px;
-  font-weight: 600;
+.main-heading{
   color: #4B2D3E;
-  line-height: 1.2;
+  font-size: 26px;
+  letter-spacing: 0px;
+  padding: 0px;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
-.subtitle {
-  color: #4D4D4D;
+.common{
+  font-weight: 500;
+  color: #4d4d4d;
+  font-size: 16px;
+  margin-bottom: 1rem;
 }
 
-.view-btn {
-  background: #9BB935;
-  color: #fff;
-  font-weight: 600;
-  padding: 8px 1dvh;
+.dis-btn{
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
 
 }
 
-.right-area {
-  background: #9BB935;
-  width: 20%;
-  height: 100%;
-  right: 0;
-  top: 0;
+.dis1-btn{
+ background-color: #9BB935;
+ border: none;
+ border-radius: 0;
+ color: #f8f5f0;
+}
+
+.dis-img{
   position: absolute;
+  right: -35%;
+  z-index: 2;
+  bottom: -45px;
+  max-width: 100%;
+  vertical-align: middle;
+  /* overflow-clip-margin: content-box; */
 }
 
-.discount-badge {
+@media (max-width: 575px){
+  .dis-img{
+    display: none;
+  }
+  
+}
+
+.dis-right-part{
+  flex-basis: 20%;
+  background-color: #9BB935;
+  position: relative;
+}
+
+.dis-offerImg{
+  left: -50%;
+  top: 15px;
   position: absolute;
-  top: 10px;
-  right: 50%;
-  z-index: 4;
+  max-width: 100%;
+  height: auto;
+
 }
 
-.product-img {
-    height: auto;
-    max-width: 100%;
-    position: absolute;
-    right: -35%;
-    z-index: 3;
-    bottom: -50px;
-}
 
 
 

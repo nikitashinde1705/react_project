@@ -1,0 +1,33 @@
+/* Default styling */
+body, .light, .dark {
+  transition: background 0.3s, color 0.3s;
+  height: 100vh;
+  padding: 40px;
+}
+
+/* Light Theme */
+.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+.dark {
+  background: #222222;
+  color: #ffffff;
+}
+
+/* Button styling */
+.toggle-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  opacity: 0.8;
+}

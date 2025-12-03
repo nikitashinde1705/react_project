@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <>
             <nav className={`navbar navbar-expand-lg ${styles.header}`}>
-                <div className={`container-fluid  ${styles.container}`}>
+                <div className={`container-fluid `}>
 
                     <NavLink className="navbar-brand" href="#">
                         <img src={logo} alt="logo" className={styles.logo}/>
