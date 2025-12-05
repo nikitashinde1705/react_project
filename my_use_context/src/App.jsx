@@ -6,6 +6,10 @@ import MessageProvider from './useContextComponant/MessageProvider';
 import Child from './useContextComponant/Child';
 import Home from './componants/Home';
 import ThemeProvider from './context/ThemeProvider';
+import WithoutUseMemo from './componants/WithoutUseMemo';
+import WithUseMemo from './componants/WithUseMemo';
+import CounterUseState from './componants/CounterUseState';
+import CounterUseReducer from './componants/UseReducer';
 
 
 function App() {
@@ -15,14 +19,20 @@ function App() {
       {/* <h1>Prop Drilling Example</h1>
       <Child message=" I am Nikita"/>     */}
 
-      <h1>Using Use Context</h1>
+      {/* <h1>Using Use Context</h1> */}
       {/* <MessageProvider>
         <Child/>
       </MessageProvider> */}
-
+{/* 
       <ThemeProvider>
         <Home/>
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      {/* <WithoutUseMemo/> */}
+      {/* <WithUseMemo/> */}
+
+      {/* <CounterUseState/> */}
+      <CounterUseReducer/>
      
     </>
   )

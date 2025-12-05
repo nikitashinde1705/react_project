@@ -10,7 +10,7 @@ const UseEffectCounter = () => {
 
     //useEffect with dependencies
     useEffect(() => {
-        console.log("Runs on every render",count);
+        console.log("Runs only once when render",count);
     },[]); // ---runs only once
 
     //useEffect with dependencies with value

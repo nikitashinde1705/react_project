@@ -7,8 +7,10 @@ const UseEffectLiveTime = () => {
         useEffect (() => {
             const timer = setInterval(() => {
                 setTime(new Date().toLocaleTimeString());
-            },1000)
+            },1000);
+
             return () => clearInterval(timer);
+
         },[]);
 
   return (
@@ -21,4 +23,4 @@ const UseEffectLiveTime = () => {
   )
 }
 
-export default UseEffectLiveTime
+export default UseEffectLiveTime; 
