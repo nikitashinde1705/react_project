@@ -12,7 +12,7 @@ import { PassingNumberProps, PassingBoolean, PassingObject, PassingArray,Passing
 // import product3 from './assets/laptop.jpg'
 // import product4 from './assets/headphone.jpg'
 import Accordion from './componants/Accordian'
-import Cards from './componants/Cards'
+// import Cards from './componants/Cards'
 import UseStateCounter from './componants/UseStateCounter'
 import UseStateInput from './componants/UseStateInput'
 import UseStateHideShow from './componants/UseStateHideShow'
@@ -24,8 +24,42 @@ import UseEffectAPIList from './componants/UseEffectAPIList'
 import SimpleForm from './componants/SimpleTextInputFormHandling'
 import ControlledFormeHandling from './componants/MultipleInputFormHandling'
 import MultipleInputFormuseRef from './componants/MultipleInputFormuseRef'
+import UseEffectPractice from './componants/UseEffrectPractice'
+
+
+
+
+ import Navbar from './course_project/Navbar'
+ import Filter from './course_project/Filter'
+ import Cards from './course_project/Cards'
+ import { apiUrl, filterData } from './data'
+ import { useEffect, useState } from 'react'
+import Spinner from './course_project/Spinner'
+import { toast } from 'react-toastify'
 
 function App() {
+
+  const [ courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  async function fetchData() {
+    setLoading(true);
+    try{
+      let response = await fetch(apiUrl);
+      let output = await response.json();
+      //output ->
+      setCourses(output.data);
+    }
+    catch(error){
+      toast.error("Network me dikkat hai");
+    }
+    setLoading(false);
+  }
+
+  useEffect(() => {
+    fetchData();
+  },[]);
+
 
   // const student = {
   //         name: "Khushi" , age:16, city: "Mumbai"
@@ -35,6 +69,54 @@ function App() {
 
   return (
     <>
+   
+
+       <div>
+        <div>
+          <Navbar/>
+        </div>
+
+        <div>
+          <Filter filterData={filterData}/>
+        </div>
+
+        <div>
+          {
+            loading ? (<Spinner/>) : (<Cards courses={courses}/>)
+          }
+        </div>
+      
+
+
+     
+       </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     {/* <FunctionExample/>
     <EventExample/>
@@ -138,7 +220,11 @@ function App() {
 
     {/* <SimpleForm/> */}
     {/* <ControlledFormeHandling/> */}
-    <MultipleInputFormuseRef/>
+    {/*<MultipleInputFormuseRef/> */}
+
+    {/* <UseEffectPractice/> */}
+
+ 
       
     
 
