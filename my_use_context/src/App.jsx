@@ -10,6 +10,8 @@ import WithoutUseMemo from './componants/WithoutUseMemo';
 import WithUseMemo from './componants/WithUseMemo';
 import CounterUseState from './componants/CounterUseState';
 import CounterUseReducer from './componants/UseReducer';
+import TodoArrayLocalStorage from './componants/TodoArrayLocalStorage';
+import ToDoCRUD from './componants/ToDoCRUD';
 
 
 function App() {
@@ -32,7 +34,10 @@ function App() {
       {/* <WithUseMemo/> */}
 
       {/* <CounterUseState/> */}
-      <CounterUseReducer/>
+      {/* <CounterUseReducer/> */}
+
+      {/* <TodoArrayLocalStorage/> */}
+      <ToDoCRUD/>
      
     </>
   )
