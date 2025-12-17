@@ -12,6 +12,10 @@ import CounterUseState from './componants/CounterUseState';
 import CounterUseReducer from './componants/UseReducer';
 import TodoArrayLocalStorage from './componants/TodoArrayLocalStorage';
 import ToDoCRUD from './componants/ToDoCRUD';
+import SessionDemo from './componants/SessionDemo';
+import AxiosExample from './componants/AxiosExample';
+
+import CrudeAxios from './componants/CrudeAxios';
 
 
 function App() {
@@ -37,7 +41,10 @@ function App() {
       {/* <CounterUseReducer/> */}
 
       {/* <TodoArrayLocalStorage/> */}
-      <ToDoCRUD/>
+      {/* <ToDoCRUD/> */}
+      {/* <SessionDemo/> */}
+      {/* <AxiosExample/> */}
+    <CrudeAxios/>
      
     </>
   )
