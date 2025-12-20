@@ -4,6 +4,7 @@ import Home from './componants/Home'
 import About from './componants/About'
 import Services from './componants/Services'
 import Contact from './componants/Contact'
+import Form from './componants/Form'
 
 
 
@@ -13,12 +14,13 @@ function App() {
   
   return (
     <>
-      <Header/>
+    {/* <Form/> */}
+      {/* <Header/>
       <Home/>
       <About/>
       <Services/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
 
     </>
   )
