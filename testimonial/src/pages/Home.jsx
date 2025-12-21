@@ -2,8 +2,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      
+    <div className='d-flex justify-content-center align-items-center'>
+        Home
     </div>
   )
 }
